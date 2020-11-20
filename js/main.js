@@ -117,13 +117,11 @@ function showStatistic() {
         insertOutput("container", `${numbArray[i]}`);
     }
     if(numbArray.length < 3) {
-        deleteOutput("container_2");
-        insertOutput("container_2", `You must enter ${3 - numbArray.length} more numbers`);
+        insertOutput("container", `You must enter ${3 - numbArray.length} more numbers`);
     }
     else {
-        deleteOutput("container_2");
         countStatistic();
-        insertOutput("container_2", `negative: ${statisticArray[0]};    zero: ${statisticArray[1]};    positive: ${statisticArray[2]};    odd: ${statisticArray[3]};    even: ${statisticArray[4]}`);
+        insertOutput("container", `negative: ${statisticArray[0]};    zero: ${statisticArray[1]};    positive: ${statisticArray[2]};    odd: ${statisticArray[3]};    even: ${statisticArray[4]}`);
     }
 }
 
